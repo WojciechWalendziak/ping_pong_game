@@ -10,7 +10,7 @@
 #pragma resource "*.dfm"
 TForm1 *Form1;
 
-int x = -8;
+int x = -4;
 int y = -4;
 
 int pickups = 0;
@@ -218,7 +218,7 @@ void __fastcall TForm1::FormCreate(TObject *Sender)
 void __fastcall TForm1::newGameClick(TObject *Sender)
 {
     x = -4;
-    y = -2;
+    y = -4;
     pickups = 0;
     right_points = 0;
     left_points = 0;
@@ -239,7 +239,7 @@ void __fastcall TForm1::newGameClick(TObject *Sender)
 void __fastcall TForm1::newRoundClick(TObject *Sender)
 {
     x = -4;
-    y = -2;
+    y = -4;
     pickups = 0;
     Ball->Visible = true;
     newGame->Visible = false;
@@ -255,5 +255,3 @@ void __fastcall TForm1::newRoundClick(TObject *Sender)
     BallTimer->Enabled = true;
     Form1->BorderStyle = bsDialog;
 }
-//---------------------------------------------------------------------------
-
