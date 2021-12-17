@@ -147,12 +147,12 @@ void __fastcall TForm1::LeftPaddleDownTimer(TObject *Sender)
 void __fastcall TForm1::FormKeyDown(TObject *Sender, WORD &Key,
       TShiftState Shift)
 {
-    if ((Key == 'a') || (Key == 'A'))
+    if (Key == 'A')
     {
         LeftPaddleUp->Enabled = true;
     }
 
-    if ((Key == 'z') || (Key == 'Z'))
+    if (Key == 'Z')
     {
         LeftPaddleDown->Enabled = true;
     }
@@ -171,12 +171,12 @@ void __fastcall TForm1::FormKeyDown(TObject *Sender, WORD &Key,
 void __fastcall TForm1::FormKeyUp(TObject *Sender, WORD &Key,
       TShiftState Shift)
 {
-    if ((Key == 'a') || (Key == 'A'))
+    if (Key == 'A')
     {
         LeftPaddleUp->Enabled = false;
     }
 
-    if ((Key == 'z') || (Key == 'Z'))
+    if (Key == 'Z')
     {
         LeftPaddleDown->Enabled = false;
     }

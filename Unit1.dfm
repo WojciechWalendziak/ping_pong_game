@@ -215,24 +215,28 @@ object Form1: TForm1
     Top = 592
   end
   object LeftPaddleUp: TTimer
+    Enabled = False
     Interval = 10
     OnTimer = LeftPaddleUpTimer
     Left = 176
     Top = 592
   end
   object LeftPaddleDown: TTimer
+    Enabled = False
     Interval = 10
     OnTimer = LeftPaddleDownTimer
     Left = 232
     Top = 592
   end
   object RightPaddleDown: TTimer
+    Enabled = False
     Interval = 10
     OnTimer = RightPaddleDownTimer
     Left = 288
     Top = 592
   end
   object RightPaddleUp: TTimer
+    Enabled = False
     Interval = 10
     OnTimer = RightPaddleUpTimer
     Left = 344
